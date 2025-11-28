@@ -1,17 +1,20 @@
-## Personal Portfolio
+# Poornapragna GB – Portfolio Website
 
-### [Live Site](https://jsmasterypro.com)
+This is my personal portfolio website built using **Next.js** and **Styled Components**.
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+It showcases:
+- My AIML projects (Arecanut Quality Predictor, SenseBeyond)
+- Full-Stack projects (Portfolio Website, E-Commerce Web App)
+- Technologies I use
+- Certificates and education timeline
 
-### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
+## Tech Stack
 
-This is a code repository for the corresponding video tutorial. Your portfolio is your resume and your business card.
+- Next.js
+- React
+- Styled Components
+- JavaScript
 
-In this video, we will create a full Personal Development Portfolio. We're going to use React and Next.js.
+## Credits
 
-Setup:
-- run ```npm i && npm start```
-
-## Launch your development career with project-based coaching - https://www.jsmastery.pro
+This portfolio layout was initially inspired by an open-source template from [JavaScript Mastery](https://github.com/adrianhajdin/portfolio_website), and then customized with my own design, content and features.
