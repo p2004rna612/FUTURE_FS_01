@@ -1,24 +1,48 @@
+// src/components/Hero/Hero.js
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import {
+  LeftSection,
+  ProfileImage,
+  NameText,
+  Tagline,
+  ButtonWrapper,
+} from './HeroStyles';
 
-const Hero = (props) => (
-  <>
-    <Section row nopadding>
+const Hero = () => {
+  const handleResumeClick = () => {
+    // resume.pdf should be inside /public
+    window.open('/resume.pdf', '_blank');
+  };
+
+  return (
+    <Section row nopadding style={{ paddingTop: '0.2rem' }}>
       <LeftSection>
-        <SectionTitle main center>
+        <SectionTitle
+          main
+          center
+          style={{ fontSize: '30px', marginBottom: '0.4rem' }}
+        >
           Welcome To <br />
           My Personal Portfolio
         </SectionTitle>
-        <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
-        </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+
+        <ProfileImage src="/images/profile.jpeg" alt="Poornapragna GB" />
+
+        <NameText>Poornapragna GB</NameText>
+
+        <Tagline>
+          Exploring AI. Engineering Solutions. Creating Impact.
+        </Tagline>
+
+        <ButtonWrapper>
+          <Button onClick={handleResumeClick}>Visit My Resume</Button>
+        </ButtonWrapper>
       </LeftSection>
     </Section>
-  </>
-);
+  );
+};
 
 export default Hero;

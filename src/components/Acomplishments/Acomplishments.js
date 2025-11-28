@@ -1,27 +1,57 @@
 import React from 'react';
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import { Box, Boxes, CertImage, CertTitle } from './AcomplishmentsStyles';
 
-const data = [
-  { number: 20, text: 'Open Source Projects'},
-  { number: 1000, text: 'Students', },
-  { number: 1900, text: 'Github Followers', },
-  { number: 5000, text: 'Github Stars', }
+const certificates = [
+  {
+    title: 'Applied Neural Networks & Deep Learning – Infosys Springboard',
+    image: '/images/cert-deeplearning.png',
+    link: '#',
+  },
+  {
+    title: 'Database Management Systems1 – Infosys Springboard',
+    image: '/images/cert-dbms1.png',
+    link: '#',
+  },
+  {
+    title: 'Database Management Systems2 – Infosys Springboard',
+    image: '/images/cert-dbms2.png',
+    link: '#',
+  },
+  {
+    title: 'Natural Language Processing – Infosys Springboard',
+    image: '/images/cert-nlp.png',
+    link: '#',
+  },
+  {
+    title: 'Linux Fundamentals – Infosys Springboard',
+    image: '/images/cert-linux.png',
+    link: '#',
+  },
+  {
+    title: 'ICAT  – ICAT Certifation',
+    image: '/images/cert-ICAT.png',
+    link: '#',
+  },
 ];
 
 const Acomplishments = () => (
-  <Section>
-    <SectionTitle>Personal Achievements</SectionTitle>
+  <Section id="certificates">
+    <SectionDivider />
+    <SectionTitle>Certificates</SectionTitle>
+
     <Boxes>
-      {data.map((card, index) => (
-        <Box key={index}>
-          <BoxNum>{`${card.number}+`}</BoxNum>
-          <BoxText>{card.text}</BoxText>
+      {certificates.map((cert, index) => (
+        <Box
+          key={index}
+          onClick={() => cert.link && window.open(cert.link, '_blank')}
+        >
+          <CertImage src={cert.image} alt={cert.title} />
+          <CertTitle>{cert.title}</CertTitle>
         </Box>
       ))}
     </Boxes>
-    <SectionDivider/>
   </Section>
 );
 

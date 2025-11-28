@@ -1,46 +1,74 @@
+// PROJECTS DATA
 export const projects = [
+  // AIML PROJECTS
   {
-    title: 'MERN Memories',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-      image: '/images/1.png',
-      tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    title: 'Arecanut Quality Predictor',
+    description:
+      'An automated system to classify arecanut quality using image processing and CNN models, enhancing price fairness for farmers.',
+    image: '/images/arecanut.png',
+    source: '',
+    visit: '',
     id: 0,
+    type: 'aiml',
   },
   {
-    title: 'E-Commerce',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    title: 'SenseBeyond: Through-Wall Detection',
+    description:
+      'A real-time AI-powered sensing system using WiFi signals (CSI) to detect human presence beyond walls using WiFi — specially used in defence & rescue operations.',
+    image: '/images/sensebeyond.png',
+    source: '',
+    visit: '',
     id: 1,
+    type: 'aiml',
   },
+
+  // FULL-STACK PROJECTS
   {
-    title: 'WebRTC App',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-      image: '/images/3.jpg',
-      tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    title: 'Portfolio Website',
+    description:
+      'A responsive portfolio website built with Next.js and Styled Components to showcase my skills, resume, and projects.',
+    image: '/images/portfolio.png',
+    source: 'https://github.com/p2004rna612',
+    visit: '',
     id: 2,
+    type: 'web',
   },
   {
-    title: 'Unichat',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    title: 'E-Commerce Web App',
+    description:
+      'A MERN-based shopping platform with authentication, cart management, and secure Stripe payment integration.',
+    image: '/images/ecommerce.png',
+    source: '',
+    visit: '',
     id: 3,
+    type: 'web',
   },
 ];
 
+// TIMELINE DATA
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  {
+    year: '2019–2020',
+    text: 'Completed 10th at Talyada Chigaterappa Kenchamma Girls English Medium School.',
+  },
+  {
+    year: '2020–2022',
+    text: 'Completed Pre-University at SRS PU College, developing strong interest toward Computer Science.',
+  },
+  {
+    year: '2022–2023',
+    text: 'Joined Sahyadri College of Engineering & Management — BE in CSE (AIML).',
+  },
+  {
+    year: '2023–2024',
+    text: 'Started learning core programming, AI/ML fundamentals and completed mini-projects.',
+  },
+  {
+    year: '2024–2025',
+    text: 'Building real-world projects, improving skills and preparing for internships & placements.',
+  },
+  {
+    year: '2026',
+    text: 'Graduating as a Computer Science Engineer specialized in AI & ML.',
+  },
 ];

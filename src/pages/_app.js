@@ -1,12 +1,12 @@
+import React from 'react';
 import Theme from '../styles/theme';
 
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
-    <>
-      <Theme>
-        <Component {...pageProps} />
-      </Theme>
-    </>
+    <Theme>
+      <Component {...pageProps} />
+    </Theme>
   );
-}
- 
+};
+
+export default App;
